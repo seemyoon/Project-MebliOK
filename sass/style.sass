@@ -1,0 +1,485 @@
+@import "reset.scss"
+$main-color-blue: #001DE1
+$main-color-yellow: #fff969
+
+@font-face 
+    font-family: 'Exo 2.0 Regular'
+    src: local('Exo 2.0 Regular')
+    src: url(../fonts/Exo20-Regular.eot)
+    src: url('../fonts/Exo20-Regular.ttf') format('embedded-opentype'),
+    url('../fonts/Exo20-Regular.woff') format('woff'),
+    url('../fonts/Exo20-Regular.ttf') format('truetype')
+    font-weight: Regular
+    font-style: normal
+@font-face 
+    font-family: 'Exo 2.0 SemiBoldItalic'
+    src: local('Exo 2.0 SemiBoldItalic')
+    src: url(../fonts/Exo20-SemiBoldItalic.eot)
+    src: url('../fonts/Exo20-SemiBoldItalic.ttf') format('embedded-opentype'),
+    url('../fonts/Exo20-SemiBoldItalic.woff') format('woff'),
+    url('../fonts/Exo20-SemiBoldItalic.ttf') format('truetype')
+    font-weight: SemiBoldItalic
+    font-style: normal
+@font-face 
+    font-family: 'Impact'
+    src: local('Impact')
+    src: url(../fonts/Impact.eot)
+    src: url('../fonts/Impact.ttf') format('embedded-opentype'),
+    url('../fonts/Impact.woff') format('woff'),
+    url('../fonts/Impact.ttf') format('truetype')
+    font-weight: impact
+    font-style: normal
+html
+    font-family: 'Exo 2.0 Regular'
+    scroll-behavior: smooth
+*
+    box-sizing: border-box
+body
+    background: #feffe1
+.section
+    width: 1160px
+    margin: 0 auto
+
+.first-section
+    min-height: 660px
+    background: linear-gradient(360deg, #fff969 0%, rgba(217, 217, 217, 0) 100%)
+    margin-bottom: 71px
+    max-width: 1440px
+    &__nav-container-decoration
+        background: $main-color-yellow
+        padding: 10px 0 5px 0
+    &__nav-container
+        display: flex
+        justify-content: space-between
+        height: 50.68px
+        align-items: center
+        margin-bottom: 8.32px
+    &__logo
+        // margin-right: 54.34px
+    &__slider-part
+        height: 550px
+        background: #A9D0F1
+    &__slider
+        max-width: 1440px
+        height: 550px
+        background: url(../img/firstphoto.png) no-repeat center
+.nav-menu
+    &__list
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__list-item
+        margin-right: 85px
+        font-size: 22.5px
+        color: $main-color-blue
+        &:last-child
+            margin-right: 0px
+        &_number
+            display: flex
+            justify-content: flex-end
+            margin-right: 20px
+a
+    text-decoration: none
+    color: #001DE1
+.subtext
+    display: flex
+    height: 103.9px
+    &__text
+        font-size: 18px
+    &__first-area
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        padding-right: 60px
+    &__second-area
+        display: flex
+        align-items: center
+        justify-content: center
+    &__third-area
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        padding-left: 60px
+    &__img
+        margin-right: 13px 
+.img_third
+    padding-top: 11px
+
+.add-text
+    border: 1px solid rgba(0, 0, 0, 0.25)
+    width: 482px
+    font-size: 16px
+    margin-right: 0.5px
+.second-section
+    min-height: 890px
+    margin-bottom: 60px
+    &__heading
+        margin-bottom: 25px
+    &__subtext
+        margin-bottom: 50px
+.heading
+    font-family: 'Impact'
+    font-weight: impact
+    font-size: 45px
+    color: $main-color-blue
+    text-align: center
+    padding-bottom: 7px
+    position: relative
+    &__hr
+        width: 231px
+        position: absolute
+        bottom: 0px
+        margin: 0px
+        left: 463px
+        border: none
+        border: 1.4px solid #6aa6ff
+.heading-subtext
+    font-family: 'Exo 2.0 SemiBoldItalic'
+    font-weight: SemiBoldItalic
+    text-align: center
+    font-size: 20px
+    letter-spacing: 0.08em
+.catalog
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 25px
+    width: 820px
+    min-height: 640px
+    margin: 0 auto
+    margin-bottom: 39.5px
+    &__img-decoration
+        display: flex 
+        justify-content: center 
+        position: relative
+        margin-bottom: 30px
+    &__item
+        border: 1px solid rgba(0, 0, 0, 0.26)
+        width: 257px
+        height: 308px
+        background: rgba(255, 249, 105, 0.84)
+        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.25)
+        color: black
+    &__gradient
+        width: 192px
+        height: 181.5px
+        filter: blur(40.57499694824219px)
+        background: linear-gradient(360deg, #faf4d7 9%, rgba(183, 183, 183, 0) 100%)
+    &__text
+        text-align: center
+        font-size: 20.25px
+    &__text-kitchen
+        font-size: 13.5px
+    &__img-container1
+        display: flex
+        justify-content: center
+        align-items: center
+    &__img
+        position: absolute
+        z-index: 1
+    &__first-photo
+        max-width: 220px
+        max-height: 192px
+        top: 36.3px
+        right: 31.47px
+    &__second-photo
+        max-width: 187px
+        max-height: 192px
+        top: 36.3px
+        right: 31.47px
+    &__third-photo
+        max-width: 144px
+        max-height: 134px
+        top: 75.3px
+        right: 52.47px
+    &__fourth-photo
+        max-width: 192px
+        max-height: 144px
+        top: 42.3px
+        right: 33.47px
+    &__fifth-photo
+        max-width: 240px
+        top: 20.299999999999997px
+        right: -0.5300000000000011px
+    &__sixth-photo
+        max-width: 138px
+        max-height: 176px
+        top: 28.299999999999997px
+        right: 63.47px
+.buttons
+    display: block
+    width: 279px
+    height: 50px       
+    margin: 0 auto
+    border: none
+    // border: 2px solid rgba(0, 0, 0, 0.48) 
+    border-radius: 19px
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.25)
+    background: #fffa7c
+    &__arrow-text
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 15.75px
+    &__text
+        color: black
+        margin: 15.5px
+    &__arrow
+        stroke-width: 1.17px
+        stroke: #001de1
+.third-section
+    position: relative
+    margin-bottom: 60px
+    &__heading
+        margin-bottom: 25px
+    &__subtext
+        margin-bottom: 150px
+    &__img
+        position: absolute
+        top: 47px
+        left: 161px
+        max-height: 181px
+.regular-text
+    max-width: 813px
+    text-align: center
+    line-height: 150%
+    letter-spacing: 0.08em
+    color: rgba(0, 0, 0, 0.8)
+
+.fourth-section
+    &__heading
+        margin-bottom: 25px
+    &__subtext
+        margin-bottom: 50px
+    &__subtext-two
+        margin-bottom: 50px
+        max-width: 450px
+        line-height: 150%
+        letter-spacing: 0.08em
+    &__map
+        margin-bottom: 37.5px
+    &__form
+        margin-bottom: 41.25px
+    &__social-media
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 98.25px
+    &__social-media-text
+        letter-spacing: 0.08em
+        font-size: 22.5px
+        text-align: center
+        color: #000
+        margin-right: 20px
+.map
+    position: relative
+    &__located
+        display: block
+        margin: 0 auto
+        z-index: 1
+    &__contacts
+        width: 231px
+        height: 197px
+        box-shadow: 0 3px 28px 0 rgba(0, 0, 0, 0.25)
+        background: #faffe6
+        border: none
+        border: 3px solid rgba(0, 0, 0, 0.07)
+        border-radius: 5px
+        position: absolute
+        top: 25px
+        left: 60px
+    &__contacts-main-text
+        font-weight: 400
+        font-size: 15px
+        letter-spacing: 0.08em
+        color: #000
+        margin: 0 auto
+        width: 180px
+        padding-top: 25px
+        margin-bottom: 11px
+    &__contacts-phone-text
+        font-size: 8px
+        letter-spacing: 0.08em
+        color: #000
+        margin: 0 auto
+        width: 110px
+        margin-bottom: 4px
+        font-size: 14.25px
+    &__contacts-phone-number
+        padding-bottom: 15px
+        width: 180px
+        margin: 0 auto
+    &__contacts-phone-located
+        width: 193px
+        margin: 0 auto
+.container-info
+    display: flex
+    justify-content: flex-start
+    gap: 12.5px
+    &__text
+        font-size: 14.25px
+        letter-spacing: 0.08em
+        color: #001de1
+        display: flex
+        align-items: center
+.form
+    border-radius: 7px
+    width: 350px
+    height: 430px
+    box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.25)
+    background: #fff
+    &__first-subsection
+        display: flex
+        justify-content: center
+        align-items: center
+        background: #fff969
+        width: 350px
+        height: 61px
+        margin-bottom: 31.3px
+    &__second-subsection
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__subsection-text-healing
+        font-size: 18px
+        letter-spacing: 0.08em
+        text-align: center
+        color: #0500ff
+    &__subsection-first-input
+        margin-bottom: 21.1px
+        position: relative
+        width: 307px
+    &__subsection-second-input
+        margin-bottom: 26.6px
+        position: relative
+        width: 307px
+    &__subsection-third-input
+        width: 307px
+    &__buttons-form-text
+        font-weight: 400
+        font-size: 13.21px
+        line-height: 0%
+        letter-spacing: 0.15em
+        text-align: center
+        color: #001de1
+    &__icon-container
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 30px
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+    &__icon-user
+        padding-left: 8px
+        font-size: 13.21px
+    &__icon-call
+        padding-left: 8px
+.form-name
+    outline: 0
+    border: 1.75px solid #ddd
+    border-radius: 26px
+    font-size: 13.21px
+    width: 100%
+    height: 39px
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1)
+    background: #fff
+    padding: 10px
+    padding-left: 32px
+    &:focus 
+        color: $main-color-blue
+        border-color: $main-color-yellow
+#phone-mask
+    outline: 0
+    border: 1.75px solid #ddd
+    border-radius: 26px
+    width: 100%
+    height: 39px
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1)
+    background: #fff
+    padding: 10px
+    padding-left: 32px
+    &:focus 
+        color: $main-color-blue
+        border-color: $main-color-yellow
+#form-textarea
+    outline: 0
+    border: 1.75px solid #ddd
+    font-size: 13.21px
+    border-radius: 26px
+    width: 100%
+    height: 110px
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1)
+    background: #fff
+    margin-bottom: 25.18px
+    resize: none
+    padding: 10px
+    padding-top: 15px 
+    &:focus 
+        color: $main-color-blue
+        border-color: $main-color-yellow
+.buttons-form
+    width: 182px
+    height: 48px      
+    margin: 0 auto
+    border: none
+    // border: 2px solid rgba(0, 0, 0, 0.48) 
+    border-radius: 19px
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.25)
+    background: #fffa7c
+.social-media
+    &__list
+        display: flex
+        justify-content: center
+        align-items: center
+    &__item
+        &:not(:last-child)
+            margin-right: 15px
+.fifth-section
+    min-height: 250px
+    background: linear-gradient(360deg, #fff969 0%, rgba(217, 217, 217, 0) 100%)
+    &__main-part
+        display: flex
+        color: $main-color-blue
+    &__icon
+        margin-right: 57px
+    &__text
+        padding-top: 40px
+.the-end
+    position: relative
+    width: 100%
+    &__healings-list
+        display: flex
+        justify-content: center
+        gap: 230px
+        margin-bottom: 37.5px
+        font-size: 22.5px
+    &__second-subheadings-list
+        display: grid
+        grid-template: repeat(3, auto) / repeat(2, auto)
+        column-gap: 30px 
+    &__hr
+        width: 814px
+        position: absolute
+        border: none
+        border: 1px solid $main-color-blue
+        height: 0px
+        top: 70px
+        left: 15px
+    &__subheadings
+        display: flex
+        justify-content: space-around
+        flex-direction: row
+        text-align: center
+    &__first-list-item
+        font-size: 16.75px
+        &:not(:last-child)
+            margin-bottom: 11px
+    &__second-list-item
+        font-size: 16.75px
+        &:not(:last-child)
+            margin-bottom: 11px
+    &__third-list-item
+        font-size: 16.75px
+        &:not(:last-child)
+            margin-bottom: 11px

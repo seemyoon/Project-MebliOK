@@ -1,0 +1,838 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Exo 2.0 Regular';
+  src: local("Exo 2.0 Regular");
+  src: url(../fonts/Exo20-Regular.eot);
+  src: url("../fonts/Exo20-Regular.ttf") format("embedded-opentype"), url("../fonts/Exo20-Regular.woff") format("woff"), url("../fonts/Exo20-Regular.ttf") format("truetype");
+  font-weight: Regular;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Exo 2.0 SemiBoldItalic';
+  src: local("Exo 2.0 SemiBoldItalic");
+  src: url(../fonts/Exo20-SemiBoldItalic.eot);
+  src: url("../fonts/Exo20-SemiBoldItalic.ttf") format("embedded-opentype"), url("../fonts/Exo20-SemiBoldItalic.woff") format("woff"), url("../fonts/Exo20-SemiBoldItalic.ttf") format("truetype");
+  font-weight: SemiBoldItalic;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Impact';
+  src: local("Impact");
+  src: url(../fonts/Impact.eot);
+  src: url("../fonts/Impact.ttf") format("embedded-opentype"), url("../fonts/Impact.woff") format("woff"), url("../fonts/Impact.ttf") format("truetype");
+  font-weight: impact;
+  font-style: normal;
+}
+
+/* line 32, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+html {
+  font-family: 'Exo 2.0 Regular';
+  scroll-behavior: smooth;
+}
+
+/* line 35, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+* {
+  box-sizing: border-box;
+}
+
+/* line 37, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+body {
+  background: #feffe1;
+}
+
+/* line 39, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.section {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+/* line 43, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.first-section {
+  min-height: 660px;
+  background: linear-gradient(360deg, #fff969 0%, rgba(217, 217, 217, 0) 100%);
+  margin-bottom: 71px;
+  max-width: 1440px;
+}
+
+/* line 48, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.first-section__nav-container-decoration {
+  background: #fff969;
+  padding: 10px 0 5px 0;
+}
+
+/* line 51, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.first-section__nav-container {
+  display: flex;
+  justify-content: space-between;
+  height: 50.68px;
+  align-items: center;
+  margin-bottom: 8.32px;
+}
+
+/* line 59, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.first-section__slider-part {
+  height: 550px;
+  background: #A9D0F1;
+}
+
+/* line 62, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.first-section__slider {
+  max-width: 1440px;
+  height: 550px;
+  background: url(../img/firstphoto.png) no-repeat center;
+}
+
+/* line 67, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.nav-menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 71, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.nav-menu__list-item {
+  margin-right: 85px;
+  font-size: 22.5px;
+  color: #001DE1;
+}
+
+/* line 75, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.nav-menu__list-item:last-child {
+  margin-right: 0px;
+}
+
+/* line 77, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.nav-menu__list-item_number {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+/* line 81, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+a {
+  text-decoration: none;
+  color: #001DE1;
+}
+
+/* line 84, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.subtext {
+  display: flex;
+  height: 103.9px;
+}
+
+/* line 87, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.subtext__text {
+  font-size: 18px;
+}
+
+/* line 89, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.subtext__first-area {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 60px;
+}
+
+/* line 94, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.subtext__second-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 98, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.subtext__third-area {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 60px;
+}
+
+/* line 103, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.subtext__img {
+  margin-right: 13px;
+}
+
+/* line 105, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.img_third {
+  padding-top: 11px;
+}
+
+/* line 108, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.add-text {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  width: 482px;
+  font-size: 16px;
+  margin-right: 0.5px;
+}
+
+/* line 113, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.second-section {
+  min-height: 890px;
+  margin-bottom: 60px;
+}
+
+/* line 116, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.second-section__heading {
+  margin-bottom: 25px;
+}
+
+/* line 118, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.second-section__subtext {
+  margin-bottom: 50px;
+}
+
+/* line 120, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.heading {
+  font-family: 'Impact';
+  font-weight: impact;
+  font-size: 45px;
+  color: #001DE1;
+  text-align: center;
+  padding-bottom: 7px;
+  position: relative;
+}
+
+/* line 128, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.heading__hr {
+  width: 231px;
+  position: absolute;
+  bottom: 0px;
+  margin: 0px;
+  left: 463px;
+  border: none;
+  border: 1.4px solid #6aa6ff;
+}
+
+/* line 136, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.heading-subtext {
+  font-family: 'Exo 2.0 SemiBoldItalic';
+  font-weight: SemiBoldItalic;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 0.08em;
+}
+
+/* line 142, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  width: 820px;
+  min-height: 640px;
+  margin: 0 auto;
+  margin-bottom: 39.5px;
+}
+
+/* line 150, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.catalog__img-decoration {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* line 155, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.catalog__item {
+  border: 1px solid rgba(0, 0, 0, 0.26);
+  width: 257px;
+  height: 308px;
+  background: rgba(255, 249, 105, 0.84);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.25);
+  color: black;
+}
+
+/* line 162, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.catalog__gradient {
+  width: 192px;
+  height: 181.5px;
+  filter: blur(40.575px);
+  background: linear-gradient(360deg, #faf4d7 9%, rgba(183, 183, 183, 0) 100%);
+}
+
+/* line 167, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.catalog__text {
+  text-align: center;
+  font-size: 20.25px;
+}
+
+/* line 170, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.catalog__text-kitchen {
+  font-size: 13.5px;
+}
+
+/* line 172, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.catalog__img-container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 176, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.catalog__img {
+  position: absolute;
+  z-index: 1;
+}
+
+/* line 179, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.catalog__first-photo {
+  max-width: 220px;
+  max-height: 192px;
+  top: 36.3px;
+  right: 31.47px;
+}
+
+/* line 184, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.catalog__second-photo {
+  max-width: 187px;
+  max-height: 192px;
+  top: 36.3px;
+  right: 31.47px;
+}
+
+/* line 189, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.catalog__third-photo {
+  max-width: 144px;
+  max-height: 134px;
+  top: 75.3px;
+  right: 52.47px;
+}
+
+/* line 194, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.catalog__fourth-photo {
+  max-width: 192px;
+  max-height: 144px;
+  top: 42.3px;
+  right: 33.47px;
+}
+
+/* line 199, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.catalog__fifth-photo {
+  max-width: 240px;
+  top: 20.299999999999997px;
+  right: -0.5300000000000011px;
+}
+
+/* line 203, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.catalog__sixth-photo {
+  max-width: 138px;
+  max-height: 176px;
+  top: 28.299999999999997px;
+  right: 63.47px;
+}
+
+/* line 208, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.buttons {
+  display: block;
+  width: 279px;
+  height: 50px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 19px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.25);
+  background: #fffa7c;
+}
+
+/* line 218, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.buttons__arrow-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15.75px;
+}
+
+/* line 223, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.buttons__text {
+  color: black;
+  margin: 15.5px;
+}
+
+/* line 226, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.buttons__arrow {
+  stroke-width: 1.17px;
+  stroke: #001de1;
+}
+
+/* line 229, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.third-section {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+/* line 232, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.third-section__heading {
+  margin-bottom: 25px;
+}
+
+/* line 234, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.third-section__subtext {
+  margin-bottom: 150px;
+}
+
+/* line 236, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.third-section__img {
+  position: absolute;
+  top: 47px;
+  left: 161px;
+  max-height: 181px;
+}
+
+/* line 241, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.regular-text {
+  max-width: 813px;
+  text-align: center;
+  line-height: 150%;
+  letter-spacing: 0.08em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 249, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.fourth-section__heading {
+  margin-bottom: 25px;
+}
+
+/* line 251, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.fourth-section__subtext {
+  margin-bottom: 50px;
+}
+
+/* line 253, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.fourth-section__subtext-two {
+  margin-bottom: 50px;
+  max-width: 450px;
+  line-height: 150%;
+  letter-spacing: 0.08em;
+}
+
+/* line 258, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.fourth-section__map {
+  margin-bottom: 37.5px;
+}
+
+/* line 260, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.fourth-section__form {
+  margin-bottom: 41.25px;
+}
+
+/* line 262, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.fourth-section__social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 98.25px;
+}
+
+/* line 267, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.fourth-section__social-media-text {
+  letter-spacing: 0.08em;
+  font-size: 22.5px;
+  text-align: center;
+  color: #000;
+  margin-right: 20px;
+}
+
+/* line 273, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.map {
+  position: relative;
+}
+
+/* line 275, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.map__located {
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+/* line 279, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.map__contacts {
+  width: 231px;
+  height: 197px;
+  box-shadow: 0 3px 28px 0 rgba(0, 0, 0, 0.25);
+  background: #faffe6;
+  border: none;
+  border: 3px solid rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  position: absolute;
+  top: 25px;
+  left: 60px;
+}
+
+/* line 290, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.map__contacts-main-text {
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  color: #000;
+  margin: 0 auto;
+  width: 180px;
+  padding-top: 25px;
+  margin-bottom: 11px;
+}
+
+/* line 299, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.map__contacts-phone-text {
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  color: #000;
+  margin: 0 auto;
+  width: 110px;
+  margin-bottom: 4px;
+  font-size: 14.25px;
+}
+
+/* line 307, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.map__contacts-phone-number {
+  padding-bottom: 15px;
+  width: 180px;
+  margin: 0 auto;
+}
+
+/* line 311, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.map__contacts-phone-located {
+  width: 193px;
+  margin: 0 auto;
+}
+
+/* line 314, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.container-info {
+  display: flex;
+  justify-content: flex-start;
+  gap: 12.5px;
+}
+
+/* line 318, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.container-info__text {
+  font-size: 14.25px;
+  letter-spacing: 0.08em;
+  color: #001de1;
+  display: flex;
+  align-items: center;
+}
+
+/* line 324, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.form {
+  border-radius: 7px;
+  width: 350px;
+  height: 430px;
+  box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+}
+
+/* line 330, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.form__first-subsection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff969;
+  width: 350px;
+  height: 61px;
+  margin-bottom: 31.3px;
+}
+
+/* line 338, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.form__second-subsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 342, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.form__subsection-text-healing {
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  text-align: center;
+  color: #0500ff;
+}
+
+/* line 347, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.form__subsection-first-input {
+  margin-bottom: 21.1px;
+  position: relative;
+  width: 307px;
+}
+
+/* line 351, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.form__subsection-second-input {
+  margin-bottom: 26.6px;
+  position: relative;
+  width: 307px;
+}
+
+/* line 355, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.form__subsection-third-input {
+  width: 307px;
+}
+
+/* line 357, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.form__buttons-form-text {
+  font-weight: 400;
+  font-size: 13.21px;
+  line-height: 0%;
+  letter-spacing: 0.15em;
+  text-align: center;
+  color: #001de1;
+}
+
+/* line 364, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.form__icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 373, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.form__icon-user {
+  padding-left: 8px;
+  font-size: 13.21px;
+}
+
+/* line 376, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.form__icon-call {
+  padding-left: 8px;
+}
+
+/* line 378, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.form-name {
+  outline: 0;
+  border: 1.75px solid #ddd;
+  border-radius: 26px;
+  font-size: 13.21px;
+  width: 100%;
+  height: 39px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 10px;
+  padding-left: 32px;
+}
+
+/* line 389, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.form-name:focus {
+  color: #001DE1;
+  border-color: #fff969;
+}
+
+/* line 392, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+#phone-mask {
+  outline: 0;
+  border: 1.75px solid #ddd;
+  border-radius: 26px;
+  width: 100%;
+  height: 39px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 10px;
+  padding-left: 32px;
+}
+
+/* line 402, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+#phone-mask:focus {
+  color: #001DE1;
+  border-color: #fff969;
+}
+
+/* line 405, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+#form-textarea {
+  outline: 0;
+  border: 1.75px solid #ddd;
+  font-size: 13.21px;
+  border-radius: 26px;
+  width: 100%;
+  height: 110px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
+  margin-bottom: 25.18px;
+  resize: none;
+  padding: 10px;
+  padding-top: 15px;
+}
+
+/* line 418, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+#form-textarea:focus {
+  color: #001DE1;
+  border-color: #fff969;
+}
+
+/* line 421, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.buttons-form {
+  width: 182px;
+  height: 48px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 19px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.25);
+  background: #fffa7c;
+}
+
+/* line 431, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.social-media__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 436, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.social-media__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+/* line 438, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.fifth-section {
+  min-height: 250px;
+  background: linear-gradient(360deg, #fff969 0%, rgba(217, 217, 217, 0) 100%);
+}
+
+/* line 441, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.fifth-section__main-part {
+  display: flex;
+  color: #001DE1;
+}
+
+/* line 444, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.fifth-section__icon {
+  margin-right: 57px;
+}
+
+/* line 446, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.fifth-section__text {
+  padding-top: 40px;
+}
+
+/* line 448, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.the-end {
+  position: relative;
+  width: 100%;
+}
+
+/* line 451, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.the-end__healings-list {
+  display: flex;
+  justify-content: center;
+  gap: 230px;
+  margin-bottom: 37.5px;
+  font-size: 22.5px;
+}
+
+/* line 457, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.the-end__second-subheadings-list {
+  display: grid;
+  grid-template: repeat(3, auto)/repeat(2, auto);
+  column-gap: 30px;
+}
+
+/* line 461, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.the-end__hr {
+  width: 814px;
+  position: absolute;
+  border: none;
+  border: 1px solid #001DE1;
+  height: 0px;
+  top: 70px;
+  left: 15px;
+}
+
+/* line 469, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.the-end__subheadings {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  text-align: center;
+}
+
+/* line 474, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.the-end__first-list-item {
+  font-size: 16.75px;
+}
+
+/* line 476, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.the-end__first-list-item:not(:last-child) {
+  margin-bottom: 11px;
+}
+
+/* line 478, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.the-end__second-list-item {
+  font-size: 16.75px;
+}
+
+/* line 480, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.the-end__second-list-item:not(:last-child) {
+  margin-bottom: 11px;
+}
+
+/* line 482, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.the-end__third-list-item {
+  font-size: 16.75px;
+}
+
+/* line 484, ../../../../../Users/semyon/Desktop/MebliOK/Project "MebliOK"/sass/style.sass */
+.the-end__third-list-item:not(:last-child) {
+  margin-bottom: 11px;
+}
+
+/*# sourceMappingURL=style.css.map */
