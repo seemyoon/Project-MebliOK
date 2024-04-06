@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -93,54 +94,42 @@ body {
 }
 
 .section {
-  width: 1160px;
+  width: 1240px;
   margin: 0 auto;
 }
 
 .first-section {
-  min-height: 660px;
-  background: linear-gradient(360deg, #fff969 0%, rgba(217, 217, 217, 0) 100%);
-  margin-bottom: 71px;
-  max-width: 1440px;
-}
-
-.first-section__nav-container-decoration {
+  height: 100vh;
   background: #fff969;
-  padding: 10px 0 5px 0;
 }
 
-.first-section__nav-container {
-  display: flex;
-  justify-content: space-between;
-  height: 50.68px;
-  align-items: center;
-  margin-bottom: 8.32px;
+.first-section__nav {
+  height: 15vh;
 }
 
 .first-section__slider-part {
-  height: 550px;
-  background: #A9D0F1;
+  height: 70vh;
+  background: url(../img/slider1.png) center/cover no-repeat;
 }
 
-.first-section__slider {
-  max-width: 1440px;
-  height: 550px;
-  background: url(../img/firstphoto.png) no-repeat center;
+.first-section__subtext {
+  height: 15vh;
+}
+
+.nav-menu {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .nav-menu__list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  gap: 40px;
 }
 
 .nav-menu__list-item {
-  margin-right: 85px;
   font-size: 22.5px;
-  color: #001DE1;
+  margin-right: 60px;
 }
 
 .nav-menu__list-item:last-child {
@@ -148,9 +137,13 @@ body {
 }
 
 .nav-menu__list-item_number {
+  margin-right: 10px;
+}
+
+.nav-menu__list-number {
   display: flex;
-  justify-content: flex-end;
-  margin-right: 20px;
+  color: #001DE1;
+  flex-direction: column;
 }
 
 a {
@@ -160,7 +153,6 @@ a {
 
 .subtext {
   display: flex;
-  height: 103.9px;
 }
 
 .subtext__text {
@@ -171,7 +163,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-right: 60px;
+  padding-right: 30px;
 }
 
 .subtext__second-area {
@@ -191,15 +183,22 @@ a {
   margin-right: 13px;
 }
 
+.img_first {
+  width: 10%;
+}
+
+.img_second {
+  width: 15%;
+}
+
 .img_third {
-  padding-top: 11px;
+  width: 12%;
 }
 
 .add-text {
   border: 1px solid rgba(0, 0, 0, 0.25);
-  width: 482px;
-  font-size: 16px;
-  margin-right: 0.5px;
+  width: 33.4vw;
+  height: 15vh;
 }
 
 .second-section {
@@ -729,9 +728,34 @@ a {
   margin-bottom: 11px;
 }
 
+.first-section__logo {
+  width: 100px;
+}
+
 @media (max-width: 1199px) {
   .section {
     width: 960px;
+  }
+  .nav-menu__list-item {
+    font-size: 20px;
+  }
+  .first-section__logo {
+    width: 100px;
+  }
+  .subtext__text {
+    font-size: 15px;
+  }
+  .subtext__third-area {
+    padding-left: 30px;
+  }
+  .img_first {
+    width: 9%;
+  }
+  .img_second {
+    width: 12%;
+  }
+  .img_third {
+    width: 11%;
   }
 }
 
@@ -739,16 +763,138 @@ a {
   .section {
     width: 720px;
   }
+  .nav-menu {
+    display: flex;
+    justify-content: flex-start;
+    gap: 60px;
+  }
+  .nav-menu__list {
+    display: flex;
+    gap: 30px;
+  }
+  .nav-menu__list-item {
+    font-size: 17px;
+    margin-right: 0px;
+  }
+  .first-section__logo {
+    width: 100px;
+  }
+  .subtext__text {
+    font-size: 15px;
+  }
+  .subtext__first-area {
+    padding-right: 20px;
+    width: 37vw;
+  }
+  .subtext__second-area {
+    width: 26vw;
+  }
+  .subtext__third-area {
+    width: 37vw;
+    padding-left: 30px;
+  }
+  .img_first {
+    width: 25px;
+  }
+  .img_second {
+    width: 40px;
+  }
+  .img_third {
+    width: 30px;
+    margin-right: 10px;
+  }
 }
 
 @media (max-width: 767px) {
   .section {
     width: 540px;
   }
+  .first-section__logo {
+    width: 100px;
+    margin-right: 5px;
+  }
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-menu__list {
+    display: none;
+  }
+  .nav-menu__list-number {
+    flex-direction: row;
+    gap: 1px;
+  }
+  .nav-menu__list-number:before {
+    content: "Контакти:";
+    margin-right: 6px;
+    font-size: 17px;
+  }
+  .nav-menu__list-item_number {
+    margin-right: 5px;
+  }
+  .subtext__text {
+    font-size: 14px;
+  }
+  .subtext__first-area {
+    width: 37vw;
+    padding: 0px;
+    padding-right: 20px;
+  }
+  .subtext__second-area {
+    width: 26vw;
+  }
+  .subtext__third-area {
+    width: 37vw;
+    padding-left: 20px;
+  }
+  .add-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .img_first {
+    width: 25px;
+  }
+  .img_second {
+    width: 40px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
+  .img_third {
+    width: 30px;
+    margin-right: 0px;
+  }
 }
 
 @media (max-width: 575px) {
   .section {
     width: 100%;
+  }
+  header {
+    padding: 10px;
+  }
+  .nav-menu {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .nav-menu__list-number {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+  }
+  .nav-menu__list-number:before {
+    content: "Контакти:";
+    margin-right: 6px;
+    font-size: 17px;
+  }
+  .first-section__slider-part {
+    height: 85vh;
+  }
+  .first-section__nav {
+    height: 15vh;
+  }
+  .first-section__subtext {
+    display: none;
   }
 }
