@@ -63,6 +63,9 @@ body
         max-width: 1440px
         height: 550px
         background: url(../img/firstphoto.png) no-repeat center
+        display: flex
+        justify-content: center
+        align-items: center
 .nav-menu
     &__list
         display: flex
@@ -483,3 +486,15 @@ a
         font-size: 16.75px
         &:not(:last-child)
             margin-bottom: 11px
+@media (max-width: 1199px) 
+    .section
+        width: 960px
+@media (max-width: 991px)
+    .section
+        width: 720px
+@media (max-width: 767px)
+    .section
+        width: 540px
+@media (max-width: 575px)
+    .section
+        width: 100%
