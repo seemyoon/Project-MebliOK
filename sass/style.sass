@@ -37,7 +37,7 @@ html
 body
     background: #feffe1
 .section
-    width: 1240px
+    width: 1200px
     margin: 0 auto
 // First section
 .first-section
@@ -45,6 +45,8 @@ body
     background: $main-color-yellow
     &__nav
         height: 15vh
+        header
+            margin-right: 5%
     &__slider-part
         height: 70vh
         background: url(../img/slider1.png) center/cover no-repeat
@@ -52,22 +54,21 @@ body
         height: 15vh
 .nav-menu
     display: flex
-    justify-content: space-between
+    justify-content: center
     align-items: center
     &__list
         display: flex
-        gap: 40px
     &__list-item
         font-size: 22.5px
-        margin-right: 60px
-        &:last-child
-            margin-right: 0px
+        margin-right: 50px
         &_number
             margin-right: 10px
     &__list-number
         display: flex
         color: $main-color-blue
         flex-direction: column
+        &:last-child
+            margin-right: 0px
 a
     text-decoration: none
     color: #001DE1
@@ -93,11 +94,11 @@ a
     &__img
         margin-right: 13px
 .img_first
-    width: 10%
+    width: 40px
 .img_second
-    width: 15%
+    width: 60px
 .img_third
-    width: 12%
+    width: 45px
 .add-text
     border: 1px solid rgba(0, 0, 0, 0.25)
     width: 33.4vw
@@ -416,8 +417,7 @@ a
     width: 182px
     height: 48px      
     margin: 0 auto
-    border: none
-    // border: 2px solid rgba(0, 0, 0, 0.48) 
+    border: none 
     border-radius: 19px
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.25)
     background: #fffa7c
@@ -477,21 +477,12 @@ a
         font-size: 16.75px
         &:not(:last-child)
             margin-bottom: 11px
-.first-section
-    &__logo
-        width: 100px
-// @media (max-width: 1335px) 
-//     .section
-//         width: 1140px
 @media (max-width: 1199px) 
     .section
         width: 960px
     .nav-menu
         &__list-item
             font-size: 20px
-    .first-section
-        &__logo
-            width: 100px
     .subtext
         &__text
             font-size: 15px
@@ -516,9 +507,8 @@ a
         &__list-item
             font-size: 17px
             margin-right: 0px
-    .first-section
-        &__logo
-            width: 100px
+        &__list-item_number
+            font-size: 15px
     .subtext
         &__text
             font-size: 15px
@@ -541,10 +531,6 @@ a
 @media (max-width: 767px)
     .section
         width: 540px
-    .first-section
-        &__logo
-            width: 100px
-            margin-right: 5px
     .nav-menu
         display: flex
         justify-content: space-between
@@ -556,7 +542,7 @@ a
             &:before
                 content: "Контакти:"
                 margin-right: 6px
-                font-size: 17px
+                font-size: 15px
         &__list-item_number
             margin-right: 5px
     .subtext
@@ -565,14 +551,12 @@ a
         &__first-area
             width: 37vw
             padding: 0px
-            // align-items: flex-end
             padding-right: 20px
         &__second-area
             width: 26vw
         &__third-area
             width: 37vw
             padding-left: 20px
-            // align-items: flex-start
     .add-text
         display: flex
         justify-content: center
@@ -590,20 +574,20 @@ a
 @media (max-width: 575px)
     .section
         width: 100%
-    header
-        padding: 10px
+    .first-section
+        &__nav
+            header
+                height: 100%
+                display: flex
+                justify-content: center
+                align-items: center
     .nav-menu
         display: flex
-        justify-content: flex-start
+        justify-content: center
         &__list-number
-            justify-content: center
-            flex-direction: column
-            align-items: center
-            gap: 1px
+            display: none
             &:before
-                content: "Контакти:"
-                margin-right: 6px
-                font-size: 17px
+                content: none
     .first-section
         &__slider-part
             height: 85vh
@@ -611,3 +595,5 @@ a
             height: 15vh
         &__subtext
             display: none
+        &__logo
+            height: 90%

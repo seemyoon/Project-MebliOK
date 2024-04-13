@@ -94,7 +94,7 @@ body {
 }
 
 .section {
-  width: 1240px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -105,6 +105,10 @@ body {
 
 .first-section__nav {
   height: 15vh;
+}
+
+.first-section__nav header {
+  margin-right: 5%;
 }
 
 .first-section__slider-part {
@@ -118,22 +122,17 @@ body {
 
 .nav-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 .nav-menu__list {
   display: flex;
-  gap: 40px;
 }
 
 .nav-menu__list-item {
   font-size: 22.5px;
-  margin-right: 60px;
-}
-
-.nav-menu__list-item:last-child {
-  margin-right: 0px;
+  margin-right: 50px;
 }
 
 .nav-menu__list-item_number {
@@ -144,6 +143,10 @@ body {
   display: flex;
   color: #001DE1;
   flex-direction: column;
+}
+
+.nav-menu__list-number:last-child {
+  margin-right: 0px;
 }
 
 a {
@@ -184,15 +187,15 @@ a {
 }
 
 .img_first {
-  width: 10%;
+  width: 40px;
 }
 
 .img_second {
-  width: 15%;
+  width: 60px;
 }
 
 .img_third {
-  width: 12%;
+  width: 45px;
 }
 
 .add-text {
@@ -728,19 +731,12 @@ a {
   margin-bottom: 11px;
 }
 
-.first-section__logo {
-  width: 100px;
-}
-
 @media (max-width: 1199px) {
   .section {
     width: 960px;
   }
   .nav-menu__list-item {
     font-size: 20px;
-  }
-  .first-section__logo {
-    width: 100px;
   }
   .subtext__text {
     font-size: 15px;
@@ -776,8 +772,8 @@ a {
     font-size: 17px;
     margin-right: 0px;
   }
-  .first-section__logo {
-    width: 100px;
+  .nav-menu__list-item_number {
+    font-size: 15px;
   }
   .subtext__text {
     font-size: 15px;
@@ -809,10 +805,6 @@ a {
   .section {
     width: 540px;
   }
-  .first-section__logo {
-    width: 100px;
-    margin-right: 5px;
-  }
   .nav-menu {
     display: flex;
     justify-content: space-between;
@@ -827,7 +819,7 @@ a {
   .nav-menu__list-number:before {
     content: "Контакти:";
     margin-right: 6px;
-    font-size: 17px;
+    font-size: 15px;
   }
   .nav-menu__list-item_number {
     margin-right: 5px;
@@ -870,23 +862,21 @@ a {
   .section {
     width: 100%;
   }
-  header {
-    padding: 10px;
+  .first-section__nav header {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .nav-menu {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
   }
   .nav-menu__list-number {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 1px;
+    display: none;
   }
   .nav-menu__list-number:before {
-    content: "Контакти:";
-    margin-right: 6px;
-    font-size: 17px;
+    content: none;
   }
   .first-section__slider-part {
     height: 85vh;
@@ -896,5 +886,8 @@ a {
   }
   .first-section__subtext {
     display: none;
+  }
+  .first-section__logo {
+    height: 90%;
   }
 }
